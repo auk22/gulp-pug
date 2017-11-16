@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="../../aigis_assets/css/highlight/okadia.css" rel="stylesheet">
+    <link href="../../aigis_assets/css/theme.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+  </head>
+<body>
+  <div class="aigis-container">
+    <div class="aigis-sidemenu">
+  <header class="aigis-header">
+    <a href="../../index.html">Index</a>
+  </header>
+  <h2 class="aigis-sidemenu__heading">Category</h2>
+  <nav class="aigis-categoryList">
+    <ul data-path-depth="0"><li data-path-depth="0"><a href="..\..\category\foundation\index.html">foundation</a><ul data-path-depth="1"><li data-path-depth="1"><a href="..\..\category\foundation\base\index.html">base</a></li><li data-path-depth="1"><a href="..\..\category\foundation\mixin\index.html">mixin</a></li><li data-path-depth="1"><a href="..\..\category\foundation\valiables\index.html">valiables</a></li></ul></li><li data-path-depth="0"><a href="..\..\category\layout\index.html">layout</a><ul data-path-depth="1"><li data-path-depth="1"><a href="..\..\category\layout\container\index.html">container</a></li><li data-path-depth="1"><a href="..\..\category\layout\footer\index.html">footer</a></li><li data-path-depth="1"><a href="..\..\category\layout\header\index.html">header</a></li><li data-path-depth="1"><a href="..\..\category\layout\layout\index.html">layout</a></li></ul></li><li data-path-depth="0"><a href="..\..\category\object\index.html" data-tree-current>object</a><ul data-path-depth="1"><li data-path-depth="1"><a href="..\..\category\object\component\index.html">component</a><ul data-path-depth="2"><li data-path-depth="2"><a href="..\..\category\object\component\alert\index.html">alert</a></li><li data-path-depth="2"><a href="..\..\category\object\component\btn\index.html">btn</a></li><li data-path-depth="2"><a href="..\..\category\object\component\heading\index.html">heading</a></li><li data-path-depth="2"><a href="..\..\category\object\component\logo\index.html">logo</a></li><li data-path-depth="2"><a href="..\..\category\object\component\movie\index.html">movie</a></li><li data-path-depth="2"><a href="..\..\category\object\component\table\index.html">table</a></li></ul></li><li data-path-depth="1"><a href="..\..\category\object\project\index.html">project</a><ul data-path-depth="2"><li data-path-depth="2"><a href="..\..\category\object\project\accordion\index.html">accordion</a></li><li data-path-depth="2"><a href="..\..\category\object\project\card\index.html">card</a></li><li data-path-depth="2"><a href="..\..\category\object\project\carousell\index.html">carousell</a></li><li data-path-depth="2"><a href="..\..\category\object\project\flow\index.html">flow</a></li><li data-path-depth="2"><a href="..\..\category\object\project\form\index.html">form</a></li><li data-path-depth="2"><a href="..\..\category\object\project\hero\index.html">hero</a></li><li data-path-depth="2"><a href="..\..\category\object\project\tab\index.html">tab</a></li></ul></li><li data-path-depth="1"><a href="..\..\category\object\utility\index.html">utility</a><ul data-path-depth="2"><li data-path-depth="2"><a href="..\..\category\object\utility\magin\index.html">magin</a></li><li data-path-depth="2"><a href="..\..\category\object\utility\text\index.html">text</a></li></ul></li></ul></li></ul>
+  </nav>
+  <h2 class="aigis-sidemenu__heading">Tag</h2>
+  <nav class="aigis-tags aigis-tagList">
+    
+      <a class="aigis-tags__item aigis-tags__item--base" href="../../tag/base/index.html">base</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--component" href="../../tag/component/index.html">component</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--latest" href="../../tag/latest/index.html">latest</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--layout" href="../../tag/layout/index.html">layout</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--library" href="../../tag/library/index.html">library</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--project" href="../../tag/project/index.html">project</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--utility" href="../../tag/utility/index.html">utility</a>
+    
+  </nav>
+  <h2 class="aigis-sidemenu__heading"><a href="../../color.html">All Colors</a></h2>
+</div>
+
+    <div class="aigis-contents">
+      <div class="aigis-contents__body">
+        
+<nav>
+  <h2 class="aigis-module__heading">Components</h2>
+  <ul class="aigis-moduleList">
+    <li class="aigis-moduleList__item">
+      <a href="#Alert">Alert</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Btn">Btn</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Heading">Heading</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Logo">Logo</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Movie">Movie</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Table">Table</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Accordion">Accordion</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Card">Card</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Carousell">Carousell</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Flow">Flow</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Form">Form</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#hero">hero</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Tab">Tab</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Margin">Margin</a>
+    </li>
+    <li class="aigis-moduleList__item">
+      <a href="#Text">Text</a>
+    </li>
+  </ul>
+</nav>
+<div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Alert">
+      Alert
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\component\_alert.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--component">
+        component
+      </li>
+    </ul>
+    <p>アラートコンポーネント</p>
+<div class="aigis-preview">
+  <p class="c-alert">これはダミーサイトです。記載されている情報は正確なものではありません。</p>
+<!-- /.c-alert --></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-alert<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>これはダミーサイトです。記載されている情報は正確なものではありません。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.c-alert --></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Btn">
+      Btn
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\component\_btn.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--component">
+        component
+      </li>
+    </ul>
+    <p>ボタンコンポーネント
+aタグやbuttonタグで使います。
+余白はpaddingで取っているので、フォントサイズによりサイズが変動します。
+親要素に対するサイズを指定したい場合は「.c-btn--fluid」を追加して下さい。
+固定のサイズを利用したい場合はscssを編集してください。</p>
+<div class="aigis-preview">
+  <a href="#" class="c-btn">デフォルトボタン</a> <a href="#" class="c-btn c-btn--main">メインボタン</a></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>デフォルトボタン<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-btn c-btn--main<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>メインボタン<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Heading">
+      Heading
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\component\_heading.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--component">
+        component
+      </li>
+    </ul>
+    <p>見出しのコンポーネント</p>
+<div class="aigis-preview">
+  <h3 class="c-heading">見出し</h3>
+<h3 class="c-heading c-heading--center">見出し</h3></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-heading<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>見出し<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-heading c-heading--center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>見出し<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Logo">
+      Logo
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\component\_logo.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--component">
+        component
+      </li>
+    </ul>
+    <p>ロゴコンポーネント</p>
+<div class="aigis-preview">
+  <h1 class="c-logo"> <a href="#"><img src="img/img_logo.png" alt="logo"></a> </h1></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/img_logo.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Movie">
+      Movie
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\component\_movie.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--component">
+        component
+      </li>
+    </ul>
+    <p>Youtubeをレスポンシブ化するコンポーネント
+728pxまで拡大されます。</p>
+<div class="aigis-preview">
+  <div class="c-movie">
+    <div class="c-movie__inner"> <iframe width="560" height="315" src="https://www.youtube.com/embed/aYtx8outAqU?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen></iframe> </div>
+    <p class="c-movie__text u-mt-2x">デモグラフィックが明確な独自のオーディエンスデータを有効活用し、精密で効率の良い広告配信を実現した広告プラットフォームサービスです。</p>
+</div>
+<!-- /.c-movie --></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-movie<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-movie__inner<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>560<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>315<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.youtube.com/embed/aYtx8outAqU?rel<span class="token punctuation">=</span>0&amp;showinfo<span class="token punctuation">=</span>0&amp;autohide<span class="token punctuation">=</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">allowfullscreen</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-movie__text u-mt-2x<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>デモグラフィックが明確な独自のオーディエンスデータを有効活用し、精密で効率の良い広告配信を実現した広告プラットフォームサービスです。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.c-movie --></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Table">
+      Table
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\component\_table.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--component">
+        component
+      </li>
+    </ul>
+    <p>表組みのコンポーネント</p>
+<div class="aigis-preview">
+  <table class="c-table">
+    <tbody>
+        <tr class="c-table__row">
+            <th class="c-table__head c-table__item">会社名</th>
+            <td class="c-table__data c-table__item">ダミーテキスト</td>
+        </tr>
+        <tr class="c-table__row">
+            <th class="c-table__head c-table__item">設立</th>
+            <td class="c-table__data c-table__item">○○○○年○○月○○日</td>
+        </tr>
+        <tr class="c-table__row">
+            <th class="c-table__head c-table__item">資本金</th>
+            <td class="c-table__data c-table__item">○億○,○○○万円<span class="c-table__annotation"> ※○○○○年○○月○○日現在</span></td>
+        </tr>
+        <tr class="c-table__row">
+            <th class="c-table__head c-table__item">従業員</th>
+            <td class="c-table__data c-table__item">○○名<span class="c-table__annotation"> ※○○○○年○○月○○日</span></td>
+        </tr>
+        <tr class="c-table__row">
+            <th class="c-table__head c-table__item">役員</th>
+            <td class="c-table__data c-table__item">山田太郎</td>
+        </tr>
+    </tbody>
+</table>
+<!-- /.c-table --></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__head c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>会社名<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__data c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>ダミーテキスト<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__head c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>設立<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__data c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>○○○○年○○月○○日<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__head c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>資本金<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__data c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>○億○,○○○万円<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__annotation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> ※○○○○年○○月○○日現在<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__head c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>従業員<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__data c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>○○名<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__annotation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> ※○○○○年○○月○○日<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__head c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>役員<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-table__data c-table__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>山田太郎<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.c-table --></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Accordion">
+      Accordion
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\project\_accordion.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--project">
+        project
+      </li>
+    </ul>
+    <p>アコーディオンコンポーネント
+動きはcommon.jsで設定しています。
+jQueryに依存しています。</p>
+<div class="aigis-preview">
+  <div class="p-accordion">
+    <p class="p-accordion__item p-accordion__item--1st p-accordion__opener">関東</p>
+    <div class="p-accordion__inner"> <a href="#" class="p-accordion__item p-accordion__item--2nd">東京</a> <a href="#" class="p-accordion__item p-accordion__item--2nd">神奈川</a> <a href="#" class="p-accordion__item p-accordion__item--2nd">埼玉</a> <a href="#" class="p-accordion__item p-accordion__item--2nd">千葉</a>        <a href="#" class="p-accordion__item p-accordion__item--2nd">茨城</a> <a href="#" class="p-accordion__item p-accordion__item--2nd">群馬</a> </div>
+    <p class="p-accordion__item p-accordion__item--1st p-accordion__opener">中国</p>
+    <div class="p-accordion__inner">
+        <p class="p-accordion__item p-accordion__item--2nd p-accordion__opener">広島</p>
+        <div class="p-accordion__inner"> <a href="#" class="p-accordion__item p-accordion__item--3rd">広島</a> <a href="#" class="p-accordion__item p-accordion__item--3rd">尾道</a> <a href="#" class="p-accordion__item p-accordion__item--3rd">呉</a> </div> <a href="#" class="p-accordion__item p-accordion__item--2nd">岡山</a>        </div>
+</div>
+<!-- /.p-accordion --></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--1st p-accordion__opener<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>関東<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__inner<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--2nd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>東京<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--2nd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>神奈川<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--2nd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>埼玉<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--2nd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>千葉<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--2nd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>茨城<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--2nd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>群馬<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--1st p-accordion__opener<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>中国<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__inner<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--2nd p-accordion__opener<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>広島<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__inner<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--3rd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>広島<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--3rd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>尾道<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--3rd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>呉<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-accordion__item p-accordion__item--2nd<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>岡山<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.p-accordion --></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Card">
+      Card
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\project\_card.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--project">
+        project
+      </li>
+    </ul>
+    <p>カード型コンポーネント</p>
+<div class="aigis-preview">
+  <div class="p-card">
+    <div class="p-card__figure"> <img src="img/img_card01.jpg" alt="" class="p-card__image"> </div>
+    <div class="p-card__body">
+        <h4 class="p-card__title">人手不足が解消</h4>
+        <p class="p-card__annotation p-card__annotation--center">東京都　自営業Aさん(34)</p>
+        <p class="p-card__text">慢性的な人手不足で悩んでいましたが、採用LPを作成していただいたところ、いい人を採用することができました。</p>
+    </div>
+    <!-- /.p-card__body -->
+</div>
+<!-- /.p-card --></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-card__figure<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/img_card01.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-card__image<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-card__body<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-card__title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>人手不足が解消<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-card__annotation p-card__annotation--center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>東京都　自営業Aさん(34)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-card__text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>慢性的な人手不足で悩んでいましたが、採用LPを作成していただいたところ、いい人を採用することができました。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.p-card__body --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.p-card --></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Carousell">
+      Carousell
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\project\_carousell.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--project">
+        project
+      </li>
+      <li class="aigis-tags__item aigis-tags__item--library">
+        library
+      </li>
+    </ul>
+    <p>スライダーコンポーネント。<br>
+外部のライブラリswiperを利用しています。<br>
+_carousell.scss以外にも後述のファイルが必要です。</p>
+<ul>
+<li>・foundation/lib/_swiper.scss</li>
+<li>・js/swiper.min.js</li>
+</ul>
+<p>swiperの設定はcommon.jsで行います。</p>
+<p>※p-carousellの子要素はswiperの命名に従います。
+<a href="http://idangero.us/swiper/#.WTd7MuvyiHs" title="null">http://idangero.us/swiper/#.WTd7MuvyiHs</a></p>
+<div class="aigis-preview">
+  <div class="p-carousell u-mb-4x">
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"> <img src="img/img_slide01.jpg" alt=""> </div>
+            <div class="swiper-slide"> <img src="img/img_slide02.jpg" alt=""> </div>
+            <div class="swiper-slide"> <img src="img/img_slide03.jpg" alt=""> </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!-- /.swipter-container -->
+    <p class="p-carousell__text u-mt-2x">デモグラフィックが明確な独自のオーディエンスデータを有効活用し、精密で効率の良い広告配信を実現した広告プラットフォームサービスです。</p>
+</div>
+<!-- /.p-carousell --></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-carousell u-mb-4x<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>swiper-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token comment" spellcheck="true">&lt;!-- Additional required wrapper --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>swiper-wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token comment" spellcheck="true">&lt;!-- Slides --></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>swiper-slide<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/img_slide01.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>swiper-slide<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/img_slide02.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>swiper-slide<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/img_slide03.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token comment" spellcheck="true">&lt;!-- If we need pagination --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>swiper-pagination<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+    <span class="token comment" spellcheck="true">&lt;!-- If we need navigation buttons --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>swiper-button-prev<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>swiper-button-next<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.swipter-container --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-carousell__text u-mt-2x<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>デモグラフィックが明確な独自のオーディエンスデータを有効活用し、精密で効率の良い広告配信を実現した広告プラットフォームサービスです。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.p-carousell --></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Flow">
+      Flow
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\project\_flow.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--project">
+        project
+      </li>
+    </ul>
+    <p>流れを説明するコンポーネント
+gridに依存してるので修正予定。</p>
+<div class="aigis-preview">
+  <div class="columns">
+    <div class="p-flow column"> <img src="img/img_flow01.jpg" alt="" class="p-flow__image">
+        <h4 class="p-flow__heading">1.ヒアリング</h4>
+        <p class="p-flow__text">お客さまのお悩みや課題を理解し、要件を定義します。</p>
+    </div>
+    <div class="p-flow column"> <img src="img/img_flow02.jpg" alt="" class="p-flow__image">
+        <h4 class="p-flow__heading">2.設計</h4>
+        <p class="p-flow__text">課題解決のプロが、独自のノウハウでサイトを設計します。</p>
+    </div>
+    <div class="p-flow column"> <img src="img/img_flow03.jpg" alt="" class="p-flow__image">
+        <h4 class="p-flow__heading">3.デザイン</h4>
+        <p class="p-flow__text">設計を元にデザイナーならではの視点でサイトを制作いたします。</p>
+    </div>
+</div>
+<!-- /.columns --></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>columns<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow column<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/img_flow01.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow__image<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow__heading<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>1.ヒアリング<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow__text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>お客さまのお悩みや課題を理解し、要件を定義します。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow column<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/img_flow02.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow__image<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow__heading<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>2.設計<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow__text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>課題解決のプロが、独自のノウハウでサイトを設計します。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow column<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/img_flow03.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow__image<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow__heading<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>3.デザイン<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-flow__text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>設計を元にデザイナーならではの視点でサイトを制作いたします。<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.columns --></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Form">
+      Form
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\project\_form.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--project">
+        project
+      </li>
+    </ul>
+    <p>フォームで使われるCSSです。
+CMSで動的に吐き出されるフォームを想定しているので、クラス名では無く、HTML要素そのものにスタイルをあててます。</p>
+<div class="aigis-preview">
+  </div>
+
+<pre><code class="language-html">
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="hero">
+      hero
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\project\_hero.scss
+    </div>
+    <ul class="aigis-tags">
+    </ul>
+    <p>画像が横幅いっぱいに広がり、その上に文字が乗るコンポーネントです。
+modifierを指定することで背景を暗くしたりできます。</p>
+<div class="aigis-preview">
+  <div class="c-hero c-hero--overlay c-hero--cover c-hero--center">
+    <div class="c-hero__content">
+        <h2 class="c-hero__headline">成果をあげるWeb広告</h2>
+        <p class="c-hero__contentText u-mb-4x">ネット広告、出稿するなら<br>イオレのpinpoint</p> <a href="#" class="c-btn c-btn--main">詳細はこちら</a> </div>
+</div>
+<!-- /.c-hero --></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-hero c-hero--overlay c-hero--cover c-hero--center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-hero__content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-hero__headline<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>成果をあげるWeb広告<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-hero__contentText u-mb-4x<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>ネット広告、出稿するなら<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>イオレのpinpoint<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>c-btn c-btn--main<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>詳細はこちら<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.c-hero --></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Tab">
+      Tab
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\project\_tab.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--project">
+        project
+      </li>
+    </ul>
+    <p>タブコンポーネント
+動きはcommon.jsで設定しています。
+jQueryに依存しています。</p>
+<div class="aigis-preview">
+  <div class="p-tab">
+    <div class="p-tab__head"> <button class="p-tab__button is-active">スタンダード</button> <button class="p-tab__button">プレミアム</button> </div>
+    <div class="p-tab__body is-active">
+        <p class="p-tab__text">スタンダードプラン</p>
+        <p class="p-tab__text">月額xxx円から</p>
+    </div>
+    <div class="p-tab__body">
+        <p class="p-tab__text">プレミアムプラン</p>
+        <p class="p-tab__text">月額xxx円から</p>
+    </div>
+</div>
+<!-- /.p-tab --></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab__head<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab__button is-active<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>スタンダード<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab__button<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>プレミアム<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab__body is-active<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab__text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>スタンダードプラン<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab__text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>月額xxx円から<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab__body<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab__text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>プレミアムプラン<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>p-tab__text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>月額xxx円から<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token comment" spellcheck="true">&lt;!-- /.p-tab --></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Margin">
+      Margin
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\utility\_margin.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--utility">
+        utility
+      </li>
+    </ul>
+    <p>余白を取るためのヘルパークラス。margin,paddingがある。
+コンポーネントに独自のmarginを持たせてしまうと再利用しづらくなるため、ヘルパークラスを使います。
+8の倍数で0から240まで予め用意しています。
+「.u-mb-4x」の様に使います。数字×8の余白がつきます。</p>
+<h3 id="-">用語解説</h3>
+<p>m,p = margin,padding
+t,r,b,l = top, right, bottom, left
+0x, 1x, 2x = 0px 8px 16px</p>
+<div class="aigis-preview">
+  <p class="u-mb-4x">test</p>
+<p>test</p></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>u-mb-4x<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+</code></pre>
+
+  </div>
+  <div class="aigis-module">
+    <h2 class="aigis-module__heading" id="Text">
+      Text
+    </h2>
+    <div class="aigis-module__filepath">
+      /sass\object\utility\_text.scss
+    </div>
+    <ul class="aigis-tags">
+      <li class="aigis-tags__item aigis-tags__item--utility">
+        utility
+      </li>
+    </ul>
+    <p>テキスト回りのヘルパークラス</p>
+<div class="aigis-preview">
+  <p class="u-text-center">test</p>
+<p class="u-text-right">test</p>
+<p class="u-text-left">test</p></div>
+
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>u-text-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>u-text-right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>u-text-left<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>test<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+</code></pre>
+
+  </div>
+</div>
+
+
+        <footer class="aigis-footer">Last update at 2017/09/07 18:31</footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

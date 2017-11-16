@@ -1,0 +1,62 @@
+/*
+---
+name: Valiables
+tag:
+  - base
+category:
+  - foundation
+  - foundation/valiables
+---
+
+変数(valiable)はこちら。<br>
+以下の変数を用意しています。<br>
+あまり沢山つくると逆に管理が大変になるので、程々にしてます
+
+- color
+- size
+- path
+- typography
+- breakpointの設定
+
+ブレイクポイントは以下の通りです。
+ * sm =  576px~
+ * md =  768px~
+ * lg =  992px~
+ * xl = 1200px~
+
+*/
+
+// colors
+$color-text: #333;
+$color-link: #878378;
+
+
+// sizes
+$base-content-width: 1000px;
+$space-unit: 16px;
+$header-height: 60px;
+$base-number: 8px;
+
+// paths
+$image-path: "../img/";
+
+// Typography
+$line-height: 1.9;
+$root-font-size: 62.5%;
+$base-font-size: 1.7rem;
+$gwf: 'Open Sans'; // google web font
+$font-family: YuGothic, Hiragino Kaku Gothic ProN, Meiryo, sans-serif !default;
+
+
+// breakpoint
+// sm =  576px (36em)
+// md =  768px (48em)
+// lg =  992px (62em)
+// xl = 1200px (75em)
+
+$breakpoints: (
+  'sm': 'screen and (max-width: 671px)',
+  'md': 'screen and (min-width: 672px)',
+  'lg': 'screen and (min-width: 992px)',
+  'xl': 'screen and (min-width: 1272px)'
+) !default;

@@ -1,0 +1,26 @@
+/*
+---
+name: Mixin
+tag:
+  - base
+category:
+  - foundation
+  - foundation/mixin
+---
+
+
+以下のmixinを定義しています
+<dl>
+<dt>mediaquery</dt>
+<dd>メディアクエリ用mixin、ブレイクポイント自体は_valiables.scssで定義しています<dd>
+</dl>
+
+*/
+
+//breakpoint
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

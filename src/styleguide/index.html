@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="./aigis_assets/css/highlight/okadia.css" rel="stylesheet">
+    <link href="./aigis_assets/css/theme.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+<body>
+  <div class="aigis-container">
+    <div class="aigis-sidemenu">
+  <header class="aigis-header">
+    <a href="./index.html">Index</a>
+  </header>
+  <h2 class="aigis-sidemenu__heading">Category</h2>
+  <nav class="aigis-categoryList">
+    <ul data-path-depth="0"><li data-path-depth="0"><a href="category\foundation\index.html">foundation</a><ul data-path-depth="1"><li data-path-depth="1"><a href="category\foundation\base\index.html">base</a></li><li data-path-depth="1"><a href="category\foundation\mixin\index.html">mixin</a></li><li data-path-depth="1"><a href="category\foundation\valiables\index.html">valiables</a></li></ul></li><li data-path-depth="0"><a href="category\layout\index.html">layout</a><ul data-path-depth="1"><li data-path-depth="1"><a href="category\layout\container\index.html">container</a></li><li data-path-depth="1"><a href="category\layout\footer\index.html">footer</a></li><li data-path-depth="1"><a href="category\layout\header\index.html">header</a></li><li data-path-depth="1"><a href="category\layout\layout\index.html">layout</a></li></ul></li><li data-path-depth="0"><a href="category\object\index.html">object</a><ul data-path-depth="1"><li data-path-depth="1"><a href="category\object\component\index.html">component</a><ul data-path-depth="2"><li data-path-depth="2"><a href="category\object\component\alert\index.html">alert</a></li><li data-path-depth="2"><a href="category\object\component\btn\index.html">btn</a></li><li data-path-depth="2"><a href="category\object\component\heading\index.html">heading</a></li><li data-path-depth="2"><a href="category\object\component\logo\index.html">logo</a></li><li data-path-depth="2"><a href="category\object\component\movie\index.html">movie</a></li><li data-path-depth="2"><a href="category\object\component\table\index.html">table</a></li></ul></li><li data-path-depth="1"><a href="category\object\project\index.html">project</a><ul data-path-depth="2"><li data-path-depth="2"><a href="category\object\project\accordion\index.html">accordion</a></li><li data-path-depth="2"><a href="category\object\project\card\index.html">card</a></li><li data-path-depth="2"><a href="category\object\project\carousell\index.html">carousell</a></li><li data-path-depth="2"><a href="category\object\project\flow\index.html">flow</a></li><li data-path-depth="2"><a href="category\object\project\form\index.html">form</a></li><li data-path-depth="2"><a href="category\object\project\hero\index.html">hero</a></li><li data-path-depth="2"><a href="category\object\project\tab\index.html">tab</a></li></ul></li><li data-path-depth="1"><a href="category\object\utility\index.html">utility</a><ul data-path-depth="2"><li data-path-depth="2"><a href="category\object\utility\magin\index.html">magin</a></li><li data-path-depth="2"><a href="category\object\utility\text\index.html">text</a></li></ul></li></ul></li></ul>
+  </nav>
+  <h2 class="aigis-sidemenu__heading">Tag</h2>
+  <nav class="aigis-tags aigis-tagList">
+    
+      <a class="aigis-tags__item aigis-tags__item--base" href="./tag/base/index.html">base</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--component" href="./tag/component/index.html">component</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--latest" href="./tag/latest/index.html">latest</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--layout" href="./tag/layout/index.html">layout</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--library" href="./tag/library/index.html">library</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--project" href="./tag/project/index.html">project</a>
+    
+      <a class="aigis-tags__item aigis-tags__item--utility" href="./tag/utility/index.html">utility</a>
+    
+  </nav>
+  <h2 class="aigis-sidemenu__heading"><a href="./color.html">All Colors</a></h2>
+</div>
+
+    <div class="aigis-contents">
+      <div class="aigis-contents__body">
+        
+  <h1 id="template-style-guide">Template style guide</h1>
+<h6 id="v1-0">v1.0</h6>
+<p><br>
+<br></p>
+<h2 id="-">概要</h2>
+<p><br>
+このテンプレートはLP作成を楽にするために作成しました。<br>１つのHTML、複数のscss、JavaScriptから作成されています。<br>Gulpで以下のタスクを動かしています。</p>
+<ul>
+<li>ローカルサーバーの立ち上げ</li>
+<li>ブラウザ更新※</li>
+<li>scssのコンパイル※</li>
+<li>CSSの圧縮※</li>
+<li>JavaScriptの圧縮※</li>
+<li>テンプレートエンジン（EJS）からHTMLファイルの生成</li>
+<li>SVGをCSS用に変換</li>
+<li>スタイルガイド（このページのことです）の生成</li>
+</ul>
+<h6 id="-">※のついてるタスクはファイルを更新すると、その都度発動します。</h6>
+<p><br>
+<br>
+<br></p>
+<h2 id="template-">Templateの利用手順</h2>
+<p><br>
+利用する手順は以下のとおりです。</p>
+<ol>
+<li><a href="https://eole.sharepoint.com/shared_information/DocLib/Forms/AllItems.aspx?id=%2Fshared_information%2FDocLib%2Ftemplate%2Faoki_template" title="null">こちら</a>から<strong>template.zip</strong>をダウンロードして、解凍</li>
+<li>作業場所（なるべく上の階層、自分の名前のフォルダ等がおすすめ）に解凍したファイルを移動</li>
+<li>コマンドプロンプトを開き<code>cd</code>と記述、ファイルをドロップ。エンターキーを押す</li>
+<li><code>npm install</code>と記入し、エンター。package.jsonで定義されたGulp等がインストールされます</li>
+<li>インストール（時間がかかります）が完了したら、<code>gulp</code>と入力し、エンター。自動更新が開始</li>
+<li>コーディングを初めましょう！</li>
+<li>終了する場合はCTRL + Cの後に<code>y</code></li>
+</ol>
+<p>一度<code>npm install</code>をしてしまえば、次回以降は手順3→5のみでOKです。<br>フォルダ名(template)は自由に変更して構いません。
+<br>
+<br>
+<br></p>
+<table>
+<thead>
+<tr>
+<th  >名前</th>
+<th  >概要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td  >Sass(scss)　</td>
+<td  >　CSSプリプロセッサ。scss記法を採用</td>
+</tr>
+<tr>
+<td  >Gulp　</td>
+<td  >　タスクランナー。自動化ツール</td>
+</tr>
+<tr>
+<td  >Bulma　</td>
+<td  >　CSSフレームワーク(gridコンポーネントのみ)</td>
+</tr>
+<tr>
+<td  >FLOCSS　</td>
+<td  >　CSS設計</td>
+</tr>
+<tr>
+<td  >aigis　</td>
+<td  >　スタイルガイドジェネレーター</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h3 id="scss-">SCSSファイルの見方</h3>
+<p>scssの詳細を見たい場合は各コンポーネントの右側にscssフォルダの場所が記載されているので、確認してください。</p>
+<p><br></p>
+<h3 id="-css">リセットCSS</h3>
+<p>リセットCSSはressを利用しています。そのため、ユニバーサルセレクタ(*)により、全ての要素にbox-sizing:border-boxが適用されています。</p>
+<p><br></p>
+<h3 id="-">フォントサイズについて</h3>
+<p>font-sizeはルート（HTML）要素に62.5%の指定をしており、その他はremで指定しています。<br>
+したがって、1rem = 10pxになります。</p>
+<table>
+<thead>
+<tr>
+<th  >名前</th>
+<th  >概要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td  >Sass(scss)　</td>
+<td  >　CSSプリプロセッサ。scss記法を採用</td>
+</tr>
+<tr>
+<td  >Gulp　</td>
+<td  >　タスクランナー。自動化ツール</td>
+</tr>
+<tr>
+<td  >Bulma　</td>
+<td  >　CSSフレームワーク(gridコンポーネントのみ)</td>
+</tr>
+<tr>
+<td  >FLOCSS　</td>
+<td  >　CSS設計</td>
+</tr>
+<tr>
+<td  >aigis　</td>
+<td  >　スタイルガイドジェネレーター</td>
+</tr>
+</tbody>
+</table>
+
+
+
+        <footer class="aigis-footer">Last update at 2017/09/07 18:31</footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
