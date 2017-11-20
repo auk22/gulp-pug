@@ -1,12 +1,8 @@
-doctype html
-html(lang="ja")
-  include _includes/_meta
-body
-  include _includes/_header
-  p testdayo-n
-  ul
-    li test
-    li test2
-    li test3
-  include _includes/_footer
+extend /_include/_layout
+append variables
+  //- Required
+  - var pageTitle= "トップページ";
 
+block content
+  p トップページです
+  a(href="/test/index.html") susumu

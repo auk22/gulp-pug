@@ -4,7 +4,8 @@ var gulp = require('gulp');
 
 // pug
 //--------------------
-var pug = require('gulp-pug'); // テンプレートエンジン
+var pug  = require('gulp-pug'); // テンプレートエンジン
+var data = require('gulp-data'); // pugをルート相対パスで記述
 
 // Sass,CSS
 //----------------------
@@ -30,6 +31,7 @@ var fs = require('fs');
 
 var paths = {
   'src'     : 'src/',
+  'pugDir'  : 'src/pug/',
   'pugSrc'  : ['src/pug/**/*.pug', '!src/pug/**/_*.pug'],
   'sassSrc' : 'src/sass/**/*.scss',
   'jsSrc'   : 'src/js/*.js',
@@ -63,6 +65,7 @@ gulp.task('pug', function() {
   gulp.src(paths.pugSrc)
     .pipe(plumber())
     .pipe(pug({
+        basedir: paths.pugDir,
         pretty: true
     }))
     .pipe(gulp.dest(paths.rootDir))
