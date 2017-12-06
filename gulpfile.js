@@ -26,7 +26,10 @@ var aigis   = require('gulp-aigis'); // スタイルガイド生成
 var replace = require('gulp-replace'); // ファイル内のテキスト書き換え
 var changed = require('gulp-changed'); // 変更のあったファイルのみ更新
 var cached  = require('gulp-cached'); // 変更のあったファイルのみ更新
+var notify = require("gulp-notify"); // コンパイルエラーを通知します
+var path = require('path');
 
+// File system
 var fs = require('fs');
 
 var paths = {
@@ -36,6 +39,7 @@ var paths = {
   'sassSrc' : 'src/sass/**/*.scss',
   'jsSrc'   : 'src/js/*.js',
   'imgSrc'  : 'src/img/',
+  'jsonSrc' : 'src/pug/data/',
   'rootDir' : 'dist/',
   'cssDir'  : 'dist/css/',
   'jsDir'   : 'dist/js/',
@@ -62,9 +66,17 @@ gulp.task('server', function() {
 // pug task
 //--------------------
 gulp.task('pug', function() {
+  var locals = {
+    'site': JSON.parse(fs.readFileSync(paths.jsonSrc + 'site.json'))
+  }
   gulp.src(paths.pugSrc)
-    .pipe(plumber())
+    .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+    .pipe(data(function(file) {
+      locals.relativePath = path.relative(file.base, file.path.replace(/.pug$/, '.html'));
+        return locals;
+    }))
     .pipe(pug({
+        locals : locals,
         basedir: paths.pugDir,
         pretty: true
     }))
@@ -76,7 +88,7 @@ gulp.task('pug', function() {
 //--------------------
 gulp.task('sass', function() {
   gulp.src(paths.sassSrc)
-      .pipe(plumber())
+      .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
       .pipe(sass({outputStyle: 'expanded'}))
       .pipe(autoprefixer(autoprefixerOptions))
       .pipe(gulp.dest(paths.cssDir))
@@ -114,16 +126,16 @@ gulp.task('aigis', function(){
 
 
 //replace SVG
-gulp.task('replaceSVG', function () {
-  gulp.src(['./svg/**/*.svg'])
-      .pipe(replace('<', '%3C'))
-      .pipe(replace('>', '%3E'))
-      .pipe(replace('{', '%7B'))
-      .pipe(replace('}', '%7D'))
-      .pipe(replace('#', '%23'))
-      .pipe(replace('\"', '\''))
-      .pipe(gulp.dest('./svg/edited/'));
-});
+// gulp.task('replaceSVG', function () {
+//   gulp.src(['./svg/**/*.svg'])
+//       .pipe(replace('<', '%3C'))
+//       .pipe(replace('>', '%3E'))
+//       .pipe(replace('{', '%7B'))
+//       .pipe(replace('}', '%7D'))
+//       .pipe(replace('#', '%23'))
+//       .pipe(replace('\"', '\''))
+//       .pipe(gulp.dest('./svg/edited/'));
+// });
 
 //watch
 gulp.task('default',['img', 'js', 'server', 'sass', 'pug',], function() {
